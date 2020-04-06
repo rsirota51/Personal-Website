@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding:0;
+    background: black;
+    color: white;
+    text-align: center;
+}
+.info{
+    padding: 120px;
+    font-size: 70px;
+}
+.header{
+    padding: 60px;
+    background: #7FFFD4;
+    color: white;
+}
+a:link{
+    color: white;
+    text-align: right;
+    font-size: 25;
+}
