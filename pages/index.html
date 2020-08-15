@@ -1,25 +1,187 @@
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Robert Sirota">
-        <meta name="description" content="Robert Sirota Programmer Website">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../style/stylesheet.css" />
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <title>Robert Sirota</title>
-    </head>
-    <body>
-        <div class="sidenav" id="sidenav"></div>
-        <div class="main">
-            <h1>Robert Sirota</h1>
-            <p>Computer Programmer</p>
-            <p>Seaford, NY</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Robert Sirota">
+    <meta name="description" content="Robert Sirota Programmer Website">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <title>Robert Sirota</title>
+    <style>
+        header{
+            background-image: url(/style/pexels-photo-276452.jpeg)
+        }
+        @media screen and (max-width: 670px){
+            header{
+                min-height: 500px;
+            }
+        }
+        #profilepic{
+            display: block;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+        }
+        #devicon{
+          font-size: 5rem;
+          margin: 0em 0 1em 0em;
+        }
+        ul#skill-list li{
+          display: inline;
+        }
+        /*img{
+    border-radius: 50%;
+    transform: rotate(270deg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+}*/
+    </style>    
+</head>
+<body>
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about" class="white-text">About</a></li>
+                    <li><a href="#skills" class="white-text">Skills</a></li>
+                    <li><a href="#projects" class="white-text">Projects</a></li>
+                    <li><a href="https://www.linkedin.com/in/robert-sirota-9686a7190/" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Linkedin">
+                        <i class="fab fa-Linkedin"></i>
+                    </a></li>
+                    <li><a href="https://github.com/rsirota51" class="btn-floating btn-small indigo darken-4 tooltipped" data-tooltip="Github">
+                        <i class="fab fa-Github"></i>
+                    </a></li>
+                </ul>
+                <ul class="sidenav grey ligten-2" id="mobile-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <span class="container">
+            <img src="../style/Profile_pic.jpg" id="profilepic" class="circle" />
+            <h1 class="center white-text">Robert Sirota</h1>
+            <p class="center">Web Developer and Software Engineer</p>
+        </span>
+    </header>
+    
+    <section class="container section scollspy" id="about">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4">About</h2>
         </div>
-        <script type="text/javascript">
-            $(function(){
-                $("#sidenav").load("comp/side.html");
-            });
-        </script>
-    </body>
+        <div class="col s12 l6 offset-l1">
+          <p>An emerging software and web developer, eager to dive into new technologies and challenges. A graduate from the University at Buffalo School of Engineering and Applied Sciences with a BS in Computer Science. Experienced in an array of languages such as C++, C#, C, Java, Visual Basic, HTML5, CSS3, JavaScript, React.Js, PHP, and SQL. Program quality focused with valuable insight into trend awareness into new technologies. Team mindset oriented, in favor of Agile principles. </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="/style/preview-77718-ppTYmuHDQx_0003.jpg" alt="" class="responsive-img">
+      </div>
+    </div>
+
+    <section class="container section scollspy" id="skills">
+      <div class="row">
+        <div class="col s12 l6 left-align offset-l1">
+          <h2 class="indigo-text text-darken-4">Skills</h2>
+        </div>
+        <ul id="skill-list">
+          <li><i class="devicon-react-original-wordmark colored iconSize" id="devicon"></i></li>
+          <li><i class="devicon-html5-plain-wordmark colored" id="devicon"></i></li>
+          <li><i class="devicon-css3-plain-wordmark colored" id="devicon"></i></li>
+          <li><i class="devicon-javascript-plain colored" id="devicon"></i></li>
+          
+        </ul>
+        <ul id="skill-list">
+          <li><i class="devicon-cplusplus-plain colored" id="devicon"></i></li>
+          <li><i class="devicon-csharp-plain colored" id="devicon"></i></li>
+          <li><i class="devicon-java-plain-wordmark colored" id="devicon"></i></li>
+          <li><i class="devicon-visualstudio-plain-wordmark colored" id="devicon"></i></li>
+        </ul>
+        <ul id="skill-list" class="col s12 l6 left-align offset-l7">
+          <li><i class="devicon-php-plain colored" id="devicon"></i></li>
+          <li><i class="devicon-c-plain-wordmark colored" id="devicon"></i></li>
+          <li><i class="devicon-mysql-plain-wordmark colored" id="devicon"></i></li>
+          <li><i class="devicon-git-plain-wordmark colored" id="devicon"></i></li>
+        </ul>
+        <ul id="skill-list" class="col s12 l6 left-align offset-l7">
+          <li><i class="devicon-slack-plain-wordmark colored" id="devicon"></i></li>
+          <li><i class="devicon-trello-plain-wordmark colored" id="devicon"></i></li>
+          <li><i class="devicon-linux-plain colored" id="devicon"></i></li>
+          <li><i class="devicon-github-plain-wordmark colored" id="devicon"></i></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="/style/preview-77718-ppTYmuHDQx_0003.jpg" alt="" class="responsive-img">
+      </div>
+    </div>
+
+    <section class="container section scollspy" id="projects">
+      <div class="row">
+        
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-4">Panels</h2>
+          <p>The Manga panels of the JoJo manga are so beautiful that each on of them can be considered works of art in thier own right.</p>
+        </div>
+      </div>
+    </section>
+
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5>About Me</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        </div>
+        <div class="col s12 l4 offset-l2">
+          <h5>Connect</h5>
+          <ul>
+            <li>
+              <a href="#" class="grey-text text-lighten-3">Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-3">Linkedin</a>
+            </li>
+            <li>
+              <a href="#" class="grey-text text-lighten-3">Github</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2020 Robert Sirota</div>
+    </div>
+  </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.tooltipped').tooltip();
+            $('.parallax').parallax();
+        });
+    </script>
+</body>
 </html>
