@@ -12,38 +12,10 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="/style/stylesheet.css">
     <title>Robert Sirota</title>
     <style>
-        header{
-            background-image: url(/style/pexels-photo-276452.jpeg)
-        }
-        @media screen and (max-width: 670px){
-            header{
-                min-height: 500px;
-            }
-        }
-        #profilepic{
-            display: block;
-            margin-top: auto;
-            margin-left: auto;
-            margin-right: auto;
-            width: 300px;
-        }
-        #devicon{
-          font-size: 5rem;
-          margin: 0em 0 1em 0em;
-        }
-        ul#skill-list li{
-          display: inline;
-        }
-        /*img{
-    border-radius: 50%;
-    transform: rotate(270deg);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 130px;
-}*/
+        
     </style>    
 </head>
 <body>
@@ -71,9 +43,9 @@
                 </ul>
             </div>
         </nav>
-        <span class="container">
+        <span class="container intro">
             <img src="../style/Profile_pic.jpg" id="profilepic" class="circle" />
-            <h1 class="center white-text">Robert Sirota</h1>
+            <h1 class="center">Robert Sirota</h1>
             <p class="center">Web Developer and Software Engineer</p>
         </span>
     </header>
@@ -95,36 +67,33 @@
       </div>
     </div>
 
-    <section class="container section scollspy" id="skills">
-      <div class="row">
-        <div class="col s12 l6 left-align offset-l1">
-          <h2 class="indigo-text text-darken-4">Skills</h2>
+    <section class="container scollspy">
+      <div>
+        <h2 class="indigo-text text-darken-4 center-align" id="skills">Skills</h2>
+        <div class="center-align">
+          <ul id="skill-list">
+            <li><i class="devicon-react-original-wordmark colored iconSize" id="devicon"></i></li>
+            <li><i class="devicon-html5-plain-wordmark colored" id="devicon"></i></li>
+            <li><i class="devicon-css3-plain-wordmark colored" id="devicon"></i></li>
+            <li><i class="devicon-javascript-plain colored" id="devicon"></i></li> 
+            <li><i class="devicon-cplusplus-plain colored" id="devicon"></i></li>
+            <li><i class="devicon-csharp-plain colored" id="devicon"></i></li>
+            <li><i class="devicon-java-plain-wordmark colored" id="devicon"></i></li>
+            <li><i class="devicon-visualstudio-plain-wordmark colored" id="devicon"></i></li>
+          </ul>
         </div>
-        <ul id="skill-list">
-          <li><i class="devicon-react-original-wordmark colored iconSize" id="devicon"></i></li>
-          <li><i class="devicon-html5-plain-wordmark colored" id="devicon"></i></li>
-          <li><i class="devicon-css3-plain-wordmark colored" id="devicon"></i></li>
-          <li><i class="devicon-javascript-plain colored" id="devicon"></i></li>
-          
-        </ul>
-        <ul id="skill-list">
-          <li><i class="devicon-cplusplus-plain colored" id="devicon"></i></li>
-          <li><i class="devicon-csharp-plain colored" id="devicon"></i></li>
-          <li><i class="devicon-java-plain-wordmark colored" id="devicon"></i></li>
-          <li><i class="devicon-visualstudio-plain-wordmark colored" id="devicon"></i></li>
-        </ul>
-        <ul id="skill-list" class="col s12 l6 left-align offset-l7">
-          <li><i class="devicon-php-plain colored" id="devicon"></i></li>
-          <li><i class="devicon-c-plain-wordmark colored" id="devicon"></i></li>
-          <li><i class="devicon-mysql-plain-wordmark colored" id="devicon"></i></li>
-          <li><i class="devicon-git-plain-wordmark colored" id="devicon"></i></li>
-        </ul>
-        <ul id="skill-list" class="col s12 l6 left-align offset-l7">
-          <li><i class="devicon-slack-plain-wordmark colored" id="devicon"></i></li>
-          <li><i class="devicon-trello-plain-wordmark colored" id="devicon"></i></li>
-          <li><i class="devicon-linux-plain colored" id="devicon"></i></li>
-          <li><i class="devicon-github-plain-wordmark colored" id="devicon"></i></li>
-        </ul>
+        <div class="center-align">
+          <ul id="skill-list">
+            <li><i class="devicon-php-plain colored" id="devicon"></i></li>
+            <li><i class="devicon-c-plain-wordmark colored" id="devicon"></i></li>
+            <li><i class="devicon-mysql-plain-wordmark colored" id="devicon"></i></li>
+            <li><i class="devicon-git-plain-wordmark colored" id="devicon"></i></li>
+            <li><i class="devicon-slack-plain-wordmark colored" id="devicon"></i></li>
+            <li><i class="devicon-trello-plain-wordmark colored" id="devicon"></i></li>
+            <li><i class="devicon-linux-plain colored" id="devicon"></i></li>
+            <li><i class="devicon-github-plain-wordmark colored" id="devicon"></i></li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -134,12 +103,41 @@
       </div>
     </div>
 
-    <section class="container section scollspy" id="projects">
-      <div class="row">
-        
-        <div class="col s12 l6 offset-l1">
-          <h2 class="indigo-text text-darken-4">Panels</h2>
-          <p>The Manga panels of the JoJo manga are so beautiful that each on of them can be considered works of art in thier own right.</p>
+    <section class="container scollspy" id="projects">
+      <div class="row center">
+        <h2 class="indigo-text text-darken-4">Projects</h2>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Afterworld</span>
+              <p>A collaborative 2D single player platformer made with original art and music. It was done in C# and built with the Unity Engine. It was made at UB Hacking 2018.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/rsirota51/Afterworld">More Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Project Pheonix</span>
+              <p>Project Pheonix is a group orginization site which allows group members to keep track of their work. It tracks current objectives that are currently in progress, as well as completed ones. Built with React.js, Node.js, Express.js, and MongoDB.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/Foreign16/project-pheonix">More Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Master Labtrinth</span>
+              <p>A computer board game based on the 1986 board game Labybinth. Made in Java.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/rsirota51/Master-Labtrinth">More Info</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -148,21 +146,17 @@
     <div class="container">
       <div class="row">
         <div class="col s12 l6">
-          <h5>About Me</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+          <h5>Thanks For Checking Me Out</h5>
+          <a class="btn" href="../Resume_Robert_Sirota.pdf">Resume</a>
         </div>
         <div class="col s12 l4 offset-l2">
           <h5>Connect</h5>
           <ul>
             <li>
-              <a href="#" class="grey-text text-lighten-3">Facebook</a>
+              <a href="https://www.linkedin.com/in/robert-sirota-9686a7190/" class="grey-text text-lighten-3">Linkedin</a>
             </li>
             <li>
-              <a href="#" class="grey-text text-lighten-3">Linkedin</a>
-            </li>
-            <li>
-              <a href="#" class="grey-text text-lighten-3">Github</a>
+              <a href="https://github.com/rsirota51" class="grey-text text-lighten-3">Github</a>
             </li>
           </ul>
         </div>
